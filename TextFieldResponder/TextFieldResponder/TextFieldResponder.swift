@@ -63,7 +63,7 @@ struct TextFieldResponder: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UITextField, context: Context) {
-        // make adjusts if needed
+        uiView.text = self.text
     }
     
     func updateBinding(value: String) {
